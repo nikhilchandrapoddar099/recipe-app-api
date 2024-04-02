@@ -4,3 +4,11 @@ docker-compose run --rm app sh -c "flake8"  //run lint
 docker-compose run --rm app sh -c "django-admin startproject nameOftheDjangoProject ." // create new django project using docker-compose
 docker-compose up //server start 
 docker-compose run --rm app sh -c "python manage.py startapp nameOftheApp"  //create new app inside existing project
+
+docker-compose run --rm app sh -c "python manage.py makemigrations" //Re-create the migrations files
+docker-compose run --rm app sh -c "python manage.py migrate" //Apply the new migrations files 
+docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate" // wait for db available and then migrate migration files
+docker volume ls
+docker volume rm nameOfVolumes
+docker-compose run --rm app sh -c "python manage.py showmigrations"
+ docker-compose run --rm app sh -c "python manage.py migrate appName zero"

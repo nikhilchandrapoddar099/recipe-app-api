@@ -11,4 +11,32 @@ docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage
 docker volume ls
 docker volume rm nameOfVolumes
 docker-compose run --rm app sh -c "python manage.py showmigrations"
- docker-compose run --rm app sh -c "python manage.py migrate appName zero"
+docker-compose run --rm app sh -c "python manage.py migrate appName zero"
+
+
+
+
+http://localhost:8000/api/docs/
+http://localhost:8000/admin/
+
+
+
+ssh-keygen -t rsa -b  4096 -> generate new ssh
+cat rsa_file_name
+
+
+docker-compose -f docker-compose-deploy.yml up
+docker-compose -f docker-compose-deploy.yml down
+
+
+
+
+10K project-------------
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwfeCDoDlSs0pjehnKoWuC8zXa1UQS482IME9Se9blJd3frfD7lXkT6N/WGz9Dpw5X4e49/HlYOxUg0tesWbG6klzwf7eYXoZ5FNR27T10G6IXlgy4YboTHNcsB1Ym+RY+qofEnG2KRUayXUCNZ/8JjYv45V/eqCo+xdvW6yxxLtUbCkU5998OP9IlaaQQ2TNMoURXjlF7Bl8B0JG5pV1gQUoBFCvYD3OBlneOgPIEgyDFbG7W3qwV6rqQUauvZwKy5metsvRyj1WuDHTxfUxi8d+M1jnKw/vnHeS8YLQrkpIYlII8dSj6l6Pcpo3LTH8RitB6HQaSKx4JHPzfwG2bgOsIweMaLUngfld3zjnwkAfnGUJR7wM3ncfwhJLFbaMW1lcCYhbr5WdGX1eARlX1ncuUucJ9tVFEVu+c7a23fd0Nj/8XYCbA5UBr37i1wXn2A2HxEECvkzTICvuXONegx64LUIrxFaParfBvsIVyH99cz3cD4w2qu6/ph9wNtYFM0fBSk4NCC7hZ0cvISmJWYE4/ZEwXWNRMqqFTEfwzSgng3tazLu++rHH11omGTq0Xh86QJE8RRfdzi4hQgtD2bthE9NhwcB2gXfJCj9PQEQscNdJO/N+dBSKUEyD4k0AtsBaUd2Z7SGVRtcaMlUw8FebNqn3+m+ojWZTLTSqOyw== nikhilchandrapoddar@Nikhils-MacBook-Air.local
+pass:- demo
+
+github
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICoBZlF/Fec6/8WyEm3tLQwWPt8ZdPtWubQjKR0LFNGv ec2-user@ip-172-31-5-242.ap-southeast-2.compute.internal
+
+
+ssh ec2-user@13.236.44.235
